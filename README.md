@@ -9,3 +9,4 @@ This study examines the emergence of place blogging as an online genre designed 
 
 ## Versions: 
 - [PDF](https://github.com/tlindgren/placeblogging/blob/master/placeblogging-pdf.pdf?raw=true)
+- [Web](http://timlindgren.com/placeblogging)
