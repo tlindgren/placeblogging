@@ -1,4 +1,5 @@
-# Place Blogging: Local Economies of Attention in the Network
+# Place Blogging
+## Local Economies of Attention in the Network
 
 Doctoral Dissertation by Tim Lindgren, 2009, Boston College
 
