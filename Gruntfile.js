@@ -206,9 +206,7 @@ module.exports = function (grunt) {
               dir: 'build',
               commit: true,
               push: true,
-              message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%',
-              login:'tlindgren',
-              token:'736238ae40b6d86f66ac2d75df36a42090ccf9d8'
+              message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
             },
             pages: {
               options: {
