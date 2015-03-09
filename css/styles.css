@@ -1,16 +1,24 @@
 html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
 html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -34,10 +42,7 @@ button {
   line-height: 1;
   padding: 0.75em 1em;
   text-decoration: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   vertical-align: middle;
   white-space: nowrap;
 }
@@ -91,8 +96,7 @@ textarea {
   font-size: 1em;
   margin-bottom: 0.75em;
   padding: 0.5em;
-  -webkit-transition: border-color;
-          transition: border-color;
+  transition: border-color;
   width: 100%;
 }
 input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
@@ -155,6 +159,7 @@ dl dd {
 
 table {
   -webkit-font-feature-settings: "kern", "liga", "tnum";
+  -moz-font-feature-settings: "kern", "liga", "tnum";
   -ms-font-feature-settings: "kern", "liga", "tnum";
   font-feature-settings: "kern", "liga", "tnum";
   border-collapse: collapse;
@@ -183,6 +188,7 @@ th {
 
 body {
   -webkit-font-feature-settings: "kern", "liga", "pnum";
+  -moz-font-feature-settings: "kern", "liga", "pnum";
   -ms-font-feature-settings: "kern", "liga", "pnum";
   font-feature-settings: "kern", "liga", "pnum";
   -webkit-font-smoothing: antialiased;
@@ -211,8 +217,7 @@ p {
 a {
   color: #1E539A;
   text-decoration: none;
-  -webkit-transition: color 0.1s linear;
-          transition: color 0.1s linear;
+  transition: color 0.1s linear;
 }
 a:active, a:focus, a:hover {
   color: #12305a;
@@ -484,9 +489,12 @@ header.navigation .sliding-menu-content {
   height: 100%;
   width: 300px;
   -webkit-transform: translateX(300px);
+  -moz-transform: translateX(300px);
   -ms-transform: translateX(300px);
+  -o-transform: translateX(300px);
   transform: translateX(300px);
   -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
   transition: all 0.25s linear;
   background: #404040;
   z-index: 999999;
@@ -519,7 +527,9 @@ header.navigation .sliding-menu-content li a:hover {
 }
 header.navigation .sliding-menu-content.is-visible {
   -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
   -ms-transform: translateX(0);
+  -o-transform: translateX(0);
   transform: translateX(0);
 }
 header.navigation .sliding-menu-fade-screen {
@@ -529,6 +539,7 @@ header.navigation .sliding-menu-fade-screen {
   bottom: 0px;
   left: 0px;
   -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s;
   background: black;
   opacity: 0;
@@ -601,6 +612,8 @@ header.navigation .search-bar form {
   position: relative;
 }
 header.navigation .search-bar form input[type=search] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   background: #404040;
   border-radius: 6px;
@@ -638,6 +651,8 @@ header.navigation .search-bar form button[type=submit] img {
     width: 16em;
   }
   header.navigation .search-bar input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
   }
@@ -652,6 +667,8 @@ body {
   color: #fff;
   text-align: center;
   padding: 1em 1em 1.5em 1em;
+  background-image: url("../img/bgmap-blur.jpg");
+  border-bottom: 1px solid #666;
 }
 
 .hero-boxes a {
@@ -705,6 +722,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: stretch;
+  -moz-box-align: stretch;
   box-align: stretch;
   -webkit-align-items: stretch;
   -moz-align-items: stretch;
@@ -716,6 +734,7 @@ body {
   -moz-box-lines: multiple;
   box-lines: multiple;
   -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   clear: both;
@@ -730,14 +749,17 @@ body {
 }
 .recent-boxes .recent-box {
   -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   -webkit-box-flex: 2;
+  -moz-box-flex: 2;
   box-flex: 2;
   -webkit-flex: 2 2 15em;
   -moz-flex: 2 2 15em;
   -ms-flex: 2 2 15em;
   flex: 2 2 15em;
   -webkit-align-self: stretch;
+  -moz-align-self: stretch;
   align-self: stretch;
   -ms-flex-item-align: stretch;
   background: #e2e2e2;
@@ -817,3 +839,74 @@ body {
   margin-right: 1em;
   margin-bottom: 0;
 }
+
+.background-image, .hero {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-size: cover !important;
+  background-position: 50%;
+  height: 100%;
+  z-index: -1;
+  /* So dropdown menu in nav doesn't get covered  */
+  /*	background-attachment: fixed !important;*/
+}
+
+.background-image-darkened {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  height: 100%;
+  z-index: -1;
+  /* So dropdown menu in nav doesn't get covered  */
+}
+
+.background-image-lightened, .hero:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(250, 250, 250, 0.5);
+  height: 100%;
+  z-index: -1;
+  /* So dropdown menu in nav doesn't get covered  */
+}
+
+.background-image-gray {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  z-index: -1;
+  /* So dropdown menu in nav doesn't get covered  */
+}
+
+.background-image-gray {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  z-index: -1;
+  /* So dropdown menu in nav doesn't get covered  */
+}
+
+/*# sourceMappingURL=styles.css.map */
