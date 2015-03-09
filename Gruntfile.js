@@ -206,7 +206,7 @@ module.exports = function (grunt) {
               dir: 'build',
               commit: true,
               push: true,
-              message: '%sourceCommit%'
+              message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
             },
             pages: {
               options: {
