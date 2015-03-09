@@ -206,7 +206,7 @@ module.exports = function (grunt) {
               dir: 'build',
               commit: true,
               push: true,
-              message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+              message: '%sourceCommit%'
             },
             pages: {
               options: {
@@ -223,7 +223,7 @@ module.exports = function (grunt) {
         }    
     });
 
-    grunt.registerTask('html', ['assemble', 'htmlmin']);
+    grunt.registerTask('html', ['assemble', 'htmlmin', 'copy']);
     grunt.registerTask('js', ['jshint', 'concat', 'uglify']);
     grunt.registerTask('style', ['sass', 'autoprefixer', 'cssmin']);
     grunt.registerTask('serve', ['connect', 'watch']);
