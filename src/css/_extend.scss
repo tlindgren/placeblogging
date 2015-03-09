@@ -16,3 +16,86 @@
     height: auto;    
 }
 
+.background-image {
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-size: cover !important;
+	background-position: 50%;
+	height: 100%;
+	z-index: -1; /* So dropdown menu in nav doesn't get covered  */
+/*	background-attachment: fixed !important;*/
+}
+
+.background-image-darkened {
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.65);
+	height:100%;
+	z-index: -1; /* So dropdown menu in nav doesn't get covered  */
+}
+
+.background-image-lightened{
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(250,250,250,0.5);
+	height:100%;
+	z-index: -1; /* So dropdown menu in nav doesn't get covered  */
+}
+
+.background-image-gray{
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	height:100%;
+	z-index: -1; /* So dropdown menu in nav doesn't get covered  */
+}
+
+.background-image-gray{
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+	height:100%;
+	z-index: -1; /* So dropdown menu in nav doesn't get covered  */
+}
+
+%full-width-content-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 999px;
+  }
+  &:after {
+    right: 100%;
+  }
+  &:before {
+    left: 100%;
+  }
+}
+

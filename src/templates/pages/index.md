@@ -6,7 +6,7 @@ layout: src/templates/layouts/index.hbs
 <div class="hero">
     <section>
              <figure>
-             <img src="img/placeblogging-image.jpg" alt="Place Blogging Cover Image" />
+             <img src="img/placeblogging-image.png" alt="Place Blogging Cover Image" />
        
              </figure>
              

@@ -63,20 +63,20 @@ module.exports = function (grunt) {
             },
             build: {
                 files: {
-                    '<%= yeoman.build %>/css/styles-pre.css': '<%= yeoman.src %>/css/styles.scss'
+                    '<%= yeoman.build %>/css/styles.css': '<%= yeoman.src %>/css/styles.scss'
                 }
             }
         },
-        autoprefixer: {
-          dist: {
-            options: {
-              browsers: ['last 2 versions', '> 1%']
-            },
-            files: {
-              '<%= yeoman.build %>/css/styles.css': '<%= yeoman.build %>/css/styles-pre.css'
-            }
-          }
-        },
+//        autoprefixer: {
+//          dist: {
+//            options: {
+//              browsers: ['last 2 versions', '> 1%']
+//            },
+//            files: {
+//              '<%= yeoman.build %>/css/styles.css': '<%= yeoman.build %>/css/styles-pre.css'
+//            }
+//          }
+//        },
         concat: {
             options: {
                 // define a string to put between each file in the concatenated output
@@ -224,9 +224,8 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('html', ['assemble', 'htmlmin', 'copy']);
-    grunt.registerTask('js', ['jshint', 'concat', 'uglify']);
-    grunt.registerTask('style', ['sass', 'autoprefixer', 'cssmin']);
+    grunt.registerTask('jscss', ['jshint','sass', 'concat', 'uglify', 'cssmin']);
     grunt.registerTask('serve', ['connect', 'watch']);
-    grunt.registerTask('default', ['js', 'style', 'imagemin', 'clean', 'html']);
+    grunt.registerTask('default', ['jscss', 'imagemin', 'clean', 'html']);
 
 };
