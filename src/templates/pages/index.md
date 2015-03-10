@@ -18,7 +18,7 @@ layout: src/templates/layouts/index.hbs
           
    <p>This study examines the emergence of place blogging as an online genre designed to foster a deeper sense of place and to share local knowledge.</p>
    
-   <p>Doctoral Dissertation by <a href="http://www.timlindgren.com">Tim Lindgren</a>, 2009, Boston College</p>
+   <p>A doctoral dissertation by <a href="http://www.timlindgren.com">Tim Lindgren</a>, 2009, Boston College</p>
            
     <ul class="menu nav">
         <li><a href="1-abstract">Abstract</a></li>
@@ -37,6 +37,6 @@ layout: src/templates/layouts/index.hbs
         <li><a href="14-ecotone">Ecotone Archives</a></li>
     </ul>
      
-       <strong><a href="https://github.com/tlindgren/placeblogging">View on Github</a></strong>  
+       <strong><a href="https://github.com/tlindgren/placeblogging">View all versions and source on Github</a></strong>  
      </section>
 </div>
